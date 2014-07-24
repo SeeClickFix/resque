@@ -27,6 +27,10 @@ module Resque
         classes.first.count(*args)
       end
 
+      def self.queues
+        classes.first.queues
+      end
+
       # Returns a paginated array of failure objects.
       def self.all(*args)
         classes.first.all(*args)

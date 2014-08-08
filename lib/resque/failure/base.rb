@@ -58,10 +58,10 @@ module Resque
       def self.clear(*args)
       end
       
-      def self.requeue(index)
+      def self.requeue(id, queue = :failed)
       end
 
-      def self.remove(index)
+      def self.remove(id, queue = :failed)
       end
 
       # Logging!
